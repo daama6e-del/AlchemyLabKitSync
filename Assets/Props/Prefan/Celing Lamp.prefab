@@ -44,13 +44,13 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.7058824, b: 0.22352941, a: 1}
-  m_Intensity: 6.24
+  m_Intensity: 1.97
   m_Range: 2.5462089
   m_SpotAngle: 16.970488
   m_InnerSpotAngle: 15.99328
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -138,16 +138,16 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.7048073, b: 0.2216981, a: 1}
-  m_Intensity: 3.02
-  m_Range: 4.1610146
+  m_Intensity: 1.86
+  m_Range: 4.04
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.598
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -180,7 +180,7 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1.83
+  m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -210,15 +210,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.703644
+      value: 2.520731
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.007
+      value: 1.8612207
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.883278
+      value: -0.9789324
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalRotation.w
@@ -226,11 +226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalRotation.z
@@ -250,7 +250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_Name
-      value: Floor Lamp
+      value: Celing Lamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

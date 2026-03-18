@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1764406075658273278
 Transform:
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 6366261553310336358}
   serializedVersion: 2
   m_LocalRotation: {x: -0.70710665, y: -0, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 0, y: 0.297, z: 0}
+  m_LocalPosition: {x: 0, y: 0.145, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,9 +45,9 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.7058824, b: 0.22352941, a: 1}
   m_Intensity: 6.24
-  m_Range: 1.79
-  m_SpotAngle: 55.575066
-  m_InnerSpotAngle: 21.80208
+  m_Range: 2.0775366
+  m_SpotAngle: 10.725147
+  m_InnerSpotAngle: 4.814014
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -109,7 +109,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8026084911068188034
 Transform:
@@ -139,7 +139,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.7048073, b: 0.2216981, a: 1}
   m_Intensity: 1.47
-  m_Range: 5.23
+  m_Range: 4.9815803
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -210,15 +210,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.7104
+      value: -0.7022686
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0080416
+      value: -0.1457791
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.883278
+      value: 4.3880672
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalRotation.w
@@ -226,7 +226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_LocalRotation.y
@@ -250,7 +250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
       propertyPath: m_Name
-      value: Celing lamp
+      value: FloorLamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8a28c00cc4e47ef438d23b11aa92ca44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
