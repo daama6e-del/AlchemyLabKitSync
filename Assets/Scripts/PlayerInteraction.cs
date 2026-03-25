@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private float maxDistance = 2f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Text interactableName;
+
+    private InteractionObject targetInteraction;
 
     // Update is called once per frame
     void Update()
@@ -17,11 +16,36 @@ public class PlayerInteraction : MonoBehaviour
         Vector3 origin = Camera.main.transform.position;
         Vector3 direction = Camera.main.transform.forward;
         RaycastHit raycastHit = new RaycastHit();
+        string interactionText = "";
+        targetInteraction = null;
 
         if (Physics.Raycast(origin, direction, out raycastHit, maxDistance))
         {
-            string objectName = raycastHit.collider.gameObject.name;
-            print(objectName);
+            targetInteraction = raycastHit.collider.gameObject.GetComponent<InteractionObject>();
+        }
+
+        if (targetInteraction) //If it is vaild
+        {
+            interactionText = targetInteraction.GetInteractionText();
+        }
+
+        SetInteractableNameText(interactionText);
+
+    }
+
+    private void SetInteractableNameText(string newText)
+    {
+        if (interactableName)
+        {
+            interactableName.text = newText;
+        }
+    }
+
+    public void tryInteract()
+    {
+        if (targetInteraction)
+        {
+            targetInteraction.Interact();
         }
     }
 }
