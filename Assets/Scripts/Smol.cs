@@ -4,18 +4,11 @@ using UnityEngine;
 public class Smol : MonoBehaviour
 {
 
-    [SerializeField] private float modifiedScale = -2f;
+    [SerializeField] private float modifiedScale = 0.2f; //Whole negative numbers break scale use less than 1 itslef
     [SerializeField] private float changeRate = 10f;
 
     private Transform playerTransform; // Player's type
     private bool isShrinking = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if (isShrinking && playerTransform != null)
@@ -32,7 +25,6 @@ public class Smol : MonoBehaviour
     private Vector3 GetTargetScale()
     {
         return Vector3.one * modifiedScale; //Vector3.one is short hand for Vector3(1, 1, 1)
-        //Is isScaled true? if so do math above || if not use the initial scale of object
     }
 
     public void Smallering(GameObject player)

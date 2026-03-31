@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour
 
     public float moveSpeed = 1.3f;
     private Vector3 moveDirection;
+    public float Density = -1f;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class CharacterMovement : MonoBehaviour
 
 
         moveDirection.Normalize();
-        moveDirection.y = -1f; //Contstantly moves downward so we dont float upward
+        moveDirection.y = Density; //Contstantly moves downward so we dont float upward
 
         characterController.Move(moveDirection * moveSpeed * Time.deltaTime);
     }
