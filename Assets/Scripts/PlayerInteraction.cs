@@ -24,7 +24,7 @@ public class PlayerInteraction : MonoBehaviour
             targetInteraction = raycastHit.collider.gameObject.GetComponent<InteractionObject>();
         }
 
-        if (targetInteraction) //If it is vaild
+        if (targetInteraction && targetInteraction.enabled) //If it is vaild and if interaction script is enabled
         {
             interactionText = targetInteraction.GetInteractionText();
         }
